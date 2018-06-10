@@ -1,3 +1,6 @@
+# OS
+from os import path
+
 # Type hinting
 from typing import Callable, Dict, List
 from neo4j.v1.result import BoltStatementResult
