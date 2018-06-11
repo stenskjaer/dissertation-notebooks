@@ -8,10 +8,11 @@ from neo4j.v1.result import BoltStatementResult
 # Database
 from neo4j.v1 import GraphDatabase
 
+uri = "bolt://hobby-cfhjihneocolgbkekkgnehbl.dbs.graphenedb.com:24786"
+driver = GraphDatabase.driver(uri, auth=("doctrines-admin", "b.boElytalQw6c.UozbGKRdegpIuZq1"))
+
 def run_query(string) -> BoltStatementResult:
     """Perform a query in the database and return the result object."""
-    uri = "bolt://localhost:7687"
-    driver = GraphDatabase.driver(uri, auth=("neo4j", "1234"))
     with driver.session() as session:
         with session.begin_transaction() as tx:
             return tx.run(string)
