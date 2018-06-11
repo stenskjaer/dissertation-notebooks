@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/stenskjaer/notebooks/master)
+
 # Doctrinal notebooks
 
 This repository provides a set of notebooks used to investigate doctrines
