@@ -37,7 +37,7 @@ def save_table(filename: str, table: str,
         )
         try:
             file.write(cont)
-            return 'Success'
+            return print('Printed the following table to %s:\n\%s' % (filename, cont))
         except OSError:
             raise
 
@@ -61,3 +61,16 @@ def print_figure_inclusion(filename: str, caption: str = '',
         "\\end{figure}"
     )
     print(cont)
+    
+    
+def build_matrix(authors, docfunc):
+    matrix = {}
+    for author in authors:
+        matrix[author] = []
+        values = docfunc(author)
+        for name in authors:
+            if name in values:
+                matrix[author].append(values[name])
+            else:
+                matrix[author].append(0)
+    return matrix
