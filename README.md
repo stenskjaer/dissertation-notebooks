@@ -50,7 +50,7 @@ The database contains the following relevant edge types:
 - `SUPPORTS`: A `Doctrine` supports another `Doctrine`.
 
 This results in the reduced database schema.
-![Illustration of the reduced graph schema](/graphics/db-schema.pdf "Graph
+![Illustration of the reduced graph schema](/graphics/db-schema.png "Graph
 schema illustration")
 
 Properties on nodes:
@@ -94,4 +94,18 @@ of this README. This will open up the notebooks for interactive use and
 experimentation. As the database is read-only, it will not be possible to make
 any changes in the registrations of the database, but merely to inspect and
 experiment with the registrations directly.
+
+## Extra graph examples
+
+Just to give an impression of how some elements of the graph look like, here are
+two examples that are also included in the introduction of the dissertation.
+
+Example graph of the presence of a doctrine in six different texts.
+![Example graph](/graphics/example-graph-six-uses-of-doctrine.png "Graph
+schema example")
+
+Example graph of arguments given by John Dinsdale on the science of the soul.
+![Example graph](/graphics/example-graph-dinsdale-argument.png "Graph
+schema example")
+
 
