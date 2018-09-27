@@ -1,4 +1,3 @@
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/stenskjaer/notebooks/master)
 
 # Doctrinal notebooks
 
@@ -83,19 +82,6 @@ dissertation it is treated in, and I therefore also apply the node type
 `DissertationPart`. The database contains two examples of that node, referring
 to chapter two and three of my dissertation, with a relationship of type
 `INCLUDES` to each doctrine `Instance`.
-
-## Using the notebooks
-
-It is possible to read the static version of the notebooks by visiting them in
-the repository.
-
-It is also possible to visit an interactive version of the notebook by following
-the 
-[binder link](https://mybinder.org/v2/gh/stenskjaer/notebooks/master) at the top
-of this README. This will open up the notebooks for interactive use and
-experimentation. As the database is read-only, it will not be possible to make
-any changes in the registrations of the database, but merely to inspect and
-experiment with the registrations directly.
 
 ## Extra graph examples
 
