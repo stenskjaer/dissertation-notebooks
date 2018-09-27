@@ -3,8 +3,10 @@
 # Doctrinal notebooks
 
 This repository provides a set of notebooks used to investigate doctrines
-concerning intellectual self-knowledge in my PhD dissertation on that subject in
-Latin medieval commentaries on Aristotle's *De anima*. 
+concerning intellectual self-knowledge in my PhD dissertation, *Intellectual
+self-knowledge in Latin commentaries on Aristotle's De anima from 1250 to 1320:
+Qualitative and quantitative analyses*. This repository provides much of the
+basis for the quantitative part of the subtitle.
 
 The notebooks can be read in static form here, but there are also interactive
 versions of them available by clicking the badge "launch binder" above or

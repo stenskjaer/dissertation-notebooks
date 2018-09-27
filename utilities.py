@@ -3,20 +3,6 @@ from os import path
 
 # Type hinting
 from typing import Callable, Dict, List
-from neo4j.v1.result import BoltStatementResult
-
-# Database
-from neo4j.v1 import GraphDatabase
-
-uri = "bolt://hobby-cfhjihneocolgbkekkgnehbl.dbs.graphenedb.com:24786"
-driver = GraphDatabase.driver(uri, auth=("doctrines-admin", "b.boElytalQw6c.UozbGKRdegpIuZq1"))
-
-def run_query(string) -> BoltStatementResult:
-    """Perform a query in the database and return the result object."""
-    with driver.session() as session:
-        with session.begin_transaction() as tx:
-            return tx.run(string)
-
 
 def save_table(filename: str, table: str,
                caption: str = '', label: str = '') -> str:
@@ -61,8 +47,8 @@ def print_figure_inclusion(filename: str, caption: str = '',
         "\\end{figure}"
     )
     print(cont)
-    
-    
+
+
 def build_matrix(authors, docfunc):
     matrix = {}
     for author in authors:
